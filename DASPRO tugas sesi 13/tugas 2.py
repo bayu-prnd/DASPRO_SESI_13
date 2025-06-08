@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 file_path = 'Data Penduduk.xlsx'
-df = pd.read_exel(file_path)
+df = pd.read_excel(file_path)
 
 grouped = df.groupby(['Pendidikan Terakhir', 'Jenis Kelamin']).size().unstack(fill_value=0)
 
